@@ -1,17 +1,20 @@
 import { Link } from 'react-router-dom';
+import styles from './NavLink.module.css';
 
-
-const NavLink = () => {
-  return ( 
-    <header>
-      <h1>BookStore CMV</h1>
+const NavLink = () => (
+  <header className={styles.containerHeader}>
+    <div className={styles.header}>
+      <h1>BookStore CMS</h1>
       <nav>
-      <Link className='links' to="/"> BookStore</Link>
-      <link className='categories' to="/categories">Categories</link>
+        <Link className={styles.links} to="/"> BOOK</Link>
+        <Link className={styles.links} to="/categories">CATEGORIES</Link>
       </nav>
-    </header>
+    </div>
+    <div>
+      <p className={styles.iconUser}>...</p>
+    </div>
+  </header>
 
-   );
-}
- 
+);
+
 export default NavLink;
