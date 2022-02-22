@@ -7,7 +7,7 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 
 # Web presentation
 
-> || Home page|| Add & Remove book || 
+> || Home page      |-| Add&Remove book || 
 > |-|---------------|-|-----------------||
 > || || ||
 
