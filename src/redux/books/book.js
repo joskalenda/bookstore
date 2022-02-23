@@ -26,13 +26,15 @@ const Book = () => {
     },
   ].map((book) => (
     <div className={styles.listBook} key={book.id} completed={book.completed}>
-      <div className={styles.divOne}>
+      <div className={styles.divOne1}>
         <span className={styles.genre}>{book.genre}</span>
-        <h2 className={styles.title}>
-          {book.title}
-          {' '}
-        </h2>
+        <h2 className={styles.title}>{book.title}</h2>
         <span className={styles.author}>{book.author}</span>
+        <div className={styles.removeButton}>
+          <button type="button">Comment</button>
+          <button type="button">Remove</button>
+          <button type="button">Edit</button>
+        </div>
       </div>
       <div>
         <p>50% progress</p>
