@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './book.module.css';
 
 export const Book = ({
@@ -41,6 +43,14 @@ export const Book = ({
     </div>
 
   );
+};
+
+Book.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  genre: PropTypes.string.isRequired,
+  completed: PropTypes.number.isRequired,
 };
 
 export default Book;
