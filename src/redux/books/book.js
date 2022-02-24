@@ -4,23 +4,16 @@ const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const initialState = [
   {
-    id: randId,
-    title: 'Ulsan',
-    author: 'Thomas Hunk',
+    id: randId(),
+    title: 'Redux from crash',
+    author: 'Topaz Jos',
     genre: 'Music',
     completed: 10,
   },
   {
-    id: randId,
-    title: 'Ulsan',
-    author: 'Thomas Hunk',
-    genre: 'Music',
-    completed: 10,
-  },
-  {
-    id: randId,
-    title: 'Ulsan',
-    author: 'Thomas Hunk',
+    id: randId(),
+    title: 'Learn Ruby ',
+    author: 'Topaz Jos',
     genre: 'Music',
     completed: 10,
   },
@@ -32,7 +25,7 @@ export const booksReducer = (state = initialState, action) => {
       return [
         ...state,
         {
-          id: randId,
+          id: randId(),
           title: action.payload.title,
           author: action.payload.author,
           genre: action.payload.genre,
