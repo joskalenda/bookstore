@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-key */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavLink from './components/NavLink';
-import Book from './redux/books/book';
+// eslint-disable-next-line import/extensions
+import Homepage from './components/Homepage';
 import Categories from './redux/categories/categories';
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
     <BrowserRouter>
       <NavLink />
       <Routes>
-        <Route path="/" element={<Book />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
