@@ -1,5 +1,5 @@
 import { userSelector } from 'react-redux';
-import Book from './Book';
+import { Book } from './Book';
 import InputBook from './InputBook';
 
 const Homepage = () => {
