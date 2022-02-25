@@ -23,10 +23,6 @@ const InputBook = () => {
     setGenre('');
   };
 
-  // const removeBookFromStore = () => {
-  //   dispatch(removeBook(id));
-  // };
-
   const onChangeTitle = (e) => setTitle(e.target.value);
   const onChangeGenre = (e) => setGenre(e.target.value);
 
