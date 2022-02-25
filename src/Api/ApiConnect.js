@@ -1,5 +1,5 @@
 const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
-const APP_ID = '/app/***/books';
+const APP_ID = '/app/0gYYVFjoAKcpIVkCAE2m/books';
 
 export const BookFromApi = async () => {
   const response = await fetch(`${BASE_URL}${APP_ID}`, {
@@ -24,4 +24,18 @@ export const createBook = async ({ itemId, title, category }) => {
     body,
   });
   return response.text();
+};
+
+export const deleteBook = async (itemId) => {
+  const body = JSON.stringify({
+    item_id: itemId,
+  });
+  const resp = await fetch(`${BASE_URL}${APP_ID}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body,
+  });
+  return resp.text();
 };
