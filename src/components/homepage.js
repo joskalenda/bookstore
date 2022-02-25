@@ -1,10 +1,19 @@
 /* eslint-disable react/jsx-key */
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
 import InputBook from './InputBook';
+import { renderBook } from '../redux/books/book';
 
 const Homepage = () => {
   const books = useSelector((e) => e.books);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(renderBook());
+  }, [dispatch]);
+  if (!books) {
+    return <div>Not Book was found</div>;
+  }
   return (
     <>
       <div>
