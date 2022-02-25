@@ -1,5 +1,5 @@
 const Categories = () => (
-  <div><p>Under construction</p></div>
+  <div key={1}><p>Under construction</p></div>
 );
 
 export default Categories;
