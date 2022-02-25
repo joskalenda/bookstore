@@ -3,9 +3,8 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/book';
 import styles from './book.module.css';
 
-export const Book = ({
+const Book = ({
   id,
-  key,
   title,
   author,
   genre,
@@ -20,8 +19,8 @@ export const Book = ({
   };
   return (
     <div>
-      <div style={para} key={key}>
-        <div className={styles.listBook} key={key} id={id}>
+      <div style={para}>
+        <div className={styles.listBook}>
           <div className={styles.divOne}>
             <span className={styles.genre}>{genre}</span>
             <h2 className={styles.title}>{title}</h2>
@@ -49,7 +48,6 @@ export const Book = ({
 
 Book.propTypes = {
   id: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,

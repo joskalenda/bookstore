@@ -1,9 +1,9 @@
-import { userSelector } from 'react-redux';
-import { Book } from './Book';
+import { useSelector } from 'react-redux';
+import Book from './Book';
 import InputBook from './InputBook';
 
 const Homepage = () => {
-  const books = userSelector((e) => e.books);
+  const books = useSelector((e) => e.books);
   return (
     <>
       <div>
