@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavLink from './components/NavLink';
 import Homepage from './components/Homepage';

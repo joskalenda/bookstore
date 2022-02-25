@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-key */
 const Categories = () => (
-  <div key={1}><p>Under construction</p></div>
+  <div><p>Under construction</p></div>
 );
 
 export default Categories;
