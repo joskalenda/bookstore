@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { v4 as randId } from 'uuid';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
