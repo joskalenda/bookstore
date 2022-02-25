@@ -9,3 +9,19 @@ export const BookFromApi = async () => {
   return dataBook;
 };
 
+export const createBook = async ({ itemId, title, category }) => {
+  // const url = `${BASE_URL}/apps/${APP_ID}/books`;
+  const body = JSON.stringify({
+    item_id: itemId,
+    title,
+    category,
+  });
+  const response = await fetch(`${BASE_URL}${APP_ID}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body,
+  });
+  return response.text();
+};
