@@ -1,27 +1,9 @@
 /* eslint-disable react/jsx-key */
-// import { v4 as randId } from 'uuid';
 import { BookFromApi, createBook, deleteBook } from '../../Api/ApiConnect';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const SET_ALL_BOOKS = 'bookStore/books/SET_ALL_BOOKS';
-
-// const initialState = [
-//   {
-//     id: randId(),
-//     title: 'Redux from crash',
-//     author: 'Topaz Jos',
-//     genre: 'Music',
-//     completed: 10,
-//   },
-//   {
-//     id: randId(),
-//     title: 'Learn Ruby ',
-//     author: 'Topaz Jos',
-//     genre: 'Music',
-//     completed: 10,
-//   },
-// ];
 
 export const booksReducer = (state = [], action) => {
   switch (action.type) {
