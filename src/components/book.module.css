@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;783&display=swap');
+
 body {
   background-color: rgb(247, 245, 245);
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .listBook {
@@ -19,7 +22,9 @@ body {
 .divOne1 {
   display: flex;
   flex-direction: column;
+  margin-top: 14px;
   text-align: left;
+  margin-left: -50px;
 }
 
 .divOne {
@@ -30,13 +35,13 @@ body {
 
 .removeButton {
   display: flex;
-  margin: 8px 0;
+  margin: 12px 0;
   text-align: left;
 }
 
-.removeButton button {
+.btn {
   font-size: 14px;
-  color: rgb(101, 137, 236);
+  color: #4386bf;
   background: none;
   padding: 6px 0;
   padding-right: 8px;
@@ -45,41 +50,45 @@ body {
 }
 
 .divOne h3 {
-  font-size: 18px;
-  color: rgba(90, 90, 90, 0.589);
+  font-size: 14px;
+  color: rgb(148, 148, 148);
   margin: 0;
 }
 
 .divOne p {
   font-size: 16px;
-  color: rgba(90, 90, 90, 0.589);
-  padding: 10px 0;
+  font-weight: 400;
+  color: rgb(148, 148, 148);
+  padding: 15px 0;
   margin: 0;
 }
 
 .divOne button {
   font-size: 16px;
   color: #fff;
-  background-color: rgb(101, 137, 236);
+  cursor: pointer;
+  background-color: #0290ff;
   padding: 6px;
   border: none;
+  border-radius: 5px;
 }
 
 .genre {
-  color: rgba(90, 90, 90, 0.589);
+  color: rgb(148, 148, 148);
   font-size: 14px;
-  padding: 0;
+  font-weight: bold;
+  padding-top: 8px;
 }
 
 .title {
   color: #000;
-  padding: 0;
+  padding: 6px 0;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
 
 .author {
-  color: rgb(101, 137, 236);
-  font-size: 18px;
+  color: #4386bf;
+  font-size: 14px;
 }
