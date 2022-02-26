@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Link } from 'react-router-dom';
+import { ImUser as User } from 'react-icons/im';
 import styles from './NavLink.module.css';
 
 const NavLink = () => (
@@ -12,7 +13,7 @@ const NavLink = () => (
       </nav>
     </div>
     <div>
-      <p className={styles.iconUser}>...</p>
+      <p className={styles.iconUser}><User /></p>
     </div>
   </header>
 

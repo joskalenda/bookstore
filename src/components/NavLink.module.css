@@ -3,6 +3,7 @@
 }
 
 .containerHeader {
+  border-bottom: 1px solid rgb(219, 218, 218);
   width: 100%;
   display: flex;
   background-color: white;
@@ -20,9 +21,9 @@
 }
 
 .header h1 {
+  font-weight: 700;
   font-size: 28px;
-  color: rgb(101, 137, 236);
-  font-weight: bold;
+  color: #0290ff;
   margin-left: 190px;
 }
 
@@ -30,10 +31,14 @@
   list-style: none;
   padding: 14px;
   text-decoration: none;
-  color: rgba(90, 90, 90, 0.589);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 
 .iconUser {
-  padding: 14px;
-  margin-right: 180px;
+  padding: 6px;
+  margin-right: 190px;
+  color: #0290ff;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 50px;
 }

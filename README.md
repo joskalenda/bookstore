@@ -7,9 +7,9 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 
 # Web presentation
 
-|| Home page      |-| Add&Remove book || 
-|-|---------------|-|-----------------||
-|| || ||
+> || Home page      || 
+> |-|-----------------|-|
+> || ![Screenshot1](/src/asset/book.png)
 
 ## Live Demo
 
@@ -61,7 +61,7 @@ $ npm run build #to build the webapp
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/joskalenda/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/joskalenda/bookstore/issues).
 
 ## Show your support
 
